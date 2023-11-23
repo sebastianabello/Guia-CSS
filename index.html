@@ -13,12 +13,17 @@
 
 	<body>
 		<header></header>
-		<main>
-			<article id="temario-css" class="">
-				<h1 class="">Aprendiendo CSS</h1>
+		<main class="main-content">
+			<h1 class="main-content__title">Guia CSS</h1>
+
+			<!-- Menu de temario -->
+			<article id="temario-css" class="main-content-temario">
 				<p>Cascading Style Sheets - Hojas de Estilo en Cascada</p>
 				<h2>Temario del Curso</h2>
 				<ul>
+					<li>
+						<a href="index.html#introduccion">Introduccion</a>
+					</li>
 					<li>
 						<a href="index.html#selectores-basicos">Selectores Básicos</a>
 					</li>
@@ -74,7 +79,44 @@
 					<li><a href="motion.html">Movimiento en CSS</a></li>
 				</ul>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
+			<article id="introduccion">
+				<h2>Introduccion</h2>
+				<h3>Preguntas basicas</h3>
+				<h4>¿Que es Css?</h4>
+				<p class="main-content__paragraph">
+					CSS Significa<span class="main-content__emphasis"
+						>"Cascading Style Sheets"</span
+					>
+					que en español traduce "Hojas de estilo en cascada", es un lenguaje de
+					estilo utilizado para describir el aspecto y el formato de un
+					documento escrito en HTML,XHTML u XML.
+				</p>
+				<h4 class="main-content__section-title">¿Para que sirve CSS?</h4>
+				<p class="main-content__paragraph">
+					CSS es un lenguaje que nos permite darle estilo a nuestro documento
+					HTML, es decir, nos permite darle color, tamaño, forma, etc. a los
+					elementos que componen nuestro documento HTML.
+				</p>
+				<h4 class="main-content__section-title">¿Como se usa CSS?</h4>
+				<p class="main-content__paragraph">
+					Para usar CSS debemos de tener un documento HTML, en el cual vamos a
+					enlazar nuestro documento CSS, para ello debemos de usar la etiqueta
+					<span class="main-content__code">&lt;link&gt;</span> y dentro de ella
+					debemos de poner el atributo
+					<span class="main-content__attribute">href</span> y el atributo
+					<span class="main-content__attribute">rel</span> y dentro del atributo
+					<span class="main-content__attribute">href</span> debemos de poner el
+					nombre de nuestro documento CSS y dentro del atributo
+					<span class="main-content__attribute">rel</span> debemos de poner
+					<span class="main-content__attribute-value">stylesheet</span> y por
+					ultimo debemos de poner el atributo
+					<span class="main-content__attribute">type</span> y dentro de el
+					debemos de poner
+					<span class="main-content__attribute-value">text/css</span>.
+				</p>
+			</article>
+			<hr class="main-content__separator" />
 			<article id="selectores-basicos">
 				<h2>Selectores Básicos</h2>
 				<p>
@@ -107,7 +149,7 @@
 				</p>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="selectores-avanzados">
 				<h2>Selectores Avanzados</h2>
 				<h3>Selectores de hijos</h3>
@@ -137,6 +179,7 @@
 				<ul>
 					<li><b>Primavera</b></li>
 					<li class="hermanos-adyacentes"><b>Verano</b></li>
+					<li><b>Otoño</b></li>
 					<li><b>Otoño</b></li>
 					<li><b>Invierno</b></li>
 				</ul>
@@ -184,7 +227,7 @@
 				</ul>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="pseudoclases">
 				<h2>Pseudoclases</h2>
 				<form class="form-pseudoclases">
@@ -244,7 +287,7 @@
 				</article>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="pseudoelementos">
 				<h2>Pseudoelementos</h2>
 				<p>
@@ -267,7 +310,7 @@
 				<br />
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="agrupar-selectores">
 				<h2>Agrupar Selectores</h2>
 				<form class="form-agrupar-selectores">
@@ -283,7 +326,7 @@
 				</form>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="algoritmo-css">
 				<h2>El Algoritmo de CSS</h2>
 				<ol>
@@ -305,7 +348,7 @@
 				<h2>Reseteo y Normalización de Estilos</h2>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<article id="prefijos-navegadores">
 				<h2>Prefijos de los Navegadores</h2>
 				<ul>
@@ -321,8 +364,9 @@
 				</ul>
 				<a href="index.html#temario-css">☝️</a>
 			</article>
-			<hr />
+			<hr class="main-content__separator" />
 			<a href="index.html#temario-css">☝️</a>
 		</main>
+		<footer></footer>
 	</body>
 </html>
