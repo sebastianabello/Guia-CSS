@@ -123,10 +123,12 @@ p {
 }
 
 /* Selector Universal */
+/* Sirve para darle estilo a toda el documento html */
 * {
 	font-family: sans-serif;
 }
 
+/* En este caso nos indica que  */
 .selector-universal * {
 	font-size: 24px;
 }
